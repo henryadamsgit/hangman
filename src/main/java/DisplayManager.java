@@ -1,2 +1,3 @@
-public class DisplayManager {
+public class DisplayManager extends Game {
+
 }
