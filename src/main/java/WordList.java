@@ -33,7 +33,6 @@ public class WordList{
 
     
     public String randomWord() {
-        return "";
-                
+        return wordsArr[(int)(Math.random() * wordsArr.length)];
     }
 }
