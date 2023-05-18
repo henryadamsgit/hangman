@@ -43,7 +43,6 @@ public class DisplayManager {
     }
 
     public void displayStatus() {
-        System.out.println("Generated Word: " + generatedWord);
         System.out.println("Underscores: " + underscoredWord);
     }
 

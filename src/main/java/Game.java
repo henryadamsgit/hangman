@@ -4,7 +4,6 @@ public class Game {
 
     private String word;
     private int lives;
-    private boolean isCorrect;
 
     public String getWord() {
         return word;
@@ -22,21 +21,16 @@ public class Game {
         this.lives = lives;
     }
 
-    public boolean isCorrect() {
-        return isCorrect;
-    }
-
-    public void setCorrect(boolean correct) {
-        isCorrect = correct;
-    }
-
     public static void main(String[] args) {
         // create an instance of Game
         Game game = new Game();
 
+        // create an instance of WordList
+        WordList wordList = new WordList();
+
         // initialize the game variables
-        game.setWord("apple");
-        game.setLives(3);
+        game.setWord(wordList.randomWord());
+        game.setLives(5);
 
         DisplayManager displayManager = new DisplayManager();
         displayManager.setGeneratedWord(game.getWord());
@@ -63,7 +57,11 @@ public class Game {
         }
 
         // game over
-        System.out.println("Game Over!");
+        if (displayManager.getGeneratedWord().equals(displayManager.getUnderscores())) {
+            System.out.println("Congratulations, you guessed the word " + displayManager.getGeneratedWord() + " correctly!");
+        } else {
+            System.out.println("Game Over!");
+        }
     }
 
     public boolean endGame(String generatedWord, String underscores, int lives) {

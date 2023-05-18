@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4cb373f-6a23-4300-8020-90a6658da9aa" name="Changes" comment="Generated random word from array and display word as a string of underscores.">
+    <list default="true" id="b4cb373f-6a23-4300-8020-90a6658da9aa" name="Changes" comment="Game now runs on loop that ends when word is guessed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DisplayManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GuessManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GuessManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WordList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WordList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684331246576</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Game now runs on loop that ends when word is guessed.">
+      <created>1684447695169</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684447695169</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -118,7 +123,8 @@
     <MESSAGE value="Created Classes" />
     <MESSAGE value="Added wordsArr. Created Game Object." />
     <MESSAGE value="Generated random word from array and display word as a string of underscores." />
-    <option name="LAST_COMMIT_MESSAGE" value="Generated random word from array and display word as a string of underscores." />
+    <MESSAGE value="Game now runs on loop that ends when word is guessed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Game now runs on loop that ends when word is guessed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
