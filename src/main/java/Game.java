@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Game {
-
     private String word;
     private int lives;
 
@@ -9,8 +8,8 @@ public class Game {
         return word;
     }
 
-    public void setWord(String title) {
-        this.word = title;
+    public void setWord(String word) {
+        this.word = word;
     }
 
     public int getLives() {
@@ -22,13 +21,10 @@ public class Game {
     }
 
     public static void main(String[] args) {
-        // create an instance of Game
         Game game = new Game();
-
-        // create an instance of WordList
         WordList wordList = new WordList();
 
-        // initialize the game variables
+        // Initialize the game variables
         game.setWord(wordList.randomWord());
         game.setLives(5);
 
@@ -36,27 +32,24 @@ public class Game {
         displayManager.setGeneratedWord(game.getWord());
         displayManager.initializeUnderscores();
 
-        // game loop
+        // Game loop
         while (game.endGame(displayManager.getGeneratedWord(), displayManager.getUnderscores(), game.getLives())) {
             System.out.println("Enter a letter (a-z) to guess...");
             Scanner userInput = new Scanner(System.in);
             String guessedLetter = userInput.nextLine().toLowerCase();
 
-            // update the game state and display
-            // the guessed letter and current status
             displayManager.setGuessedLetter(guessedLetter);
             displayManager.updateGame();
 
             displayManager.displayStatus();
 
-            // check if the guessed letter is correct
             if (!displayManager.isGuessCorrect()) {
                 game.setLives(game.getLives() - 1);
-                System.out.println("Incorrect! Lives remaining: " + game.getLives());
+                System.out.println("Incorrect! You have " + game.getLives() + " lives remaining!");
             }
         }
 
-        // game over
+        // Game over
         if (displayManager.getGeneratedWord().equals(displayManager.getUnderscores())) {
             System.out.println("Congratulations, you guessed the word " + displayManager.getGeneratedWord() + " correctly!");
         } else {
@@ -68,3 +61,4 @@ public class Game {
         return lives > 0 && !generatedWord.equals(underscores);
     }
 }
+

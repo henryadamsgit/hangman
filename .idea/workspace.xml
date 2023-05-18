@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4cb373f-6a23-4300-8020-90a6658da9aa" name="Changes" comment="Game now runs on loop that ends when word is guessed.">
+    <list default="true" id="b4cb373f-6a23-4300-8020-90a6658da9aa" name="Changes" comment="Finished functionality for hangman. Updates lives and displays message if word is guessed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DisplayManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GuessManager.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684447695169</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finished functionality for hangman. Updates lives and displays message if word is guessed.">
+      <created>1684450571065</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684450571066</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -124,7 +132,8 @@
     <MESSAGE value="Added wordsArr. Created Game Object." />
     <MESSAGE value="Generated random word from array and display word as a string of underscores." />
     <MESSAGE value="Game now runs on loop that ends when word is guessed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Game now runs on loop that ends when word is guessed." />
+    <MESSAGE value="Finished functionality for hangman. Updates lives and displays message if word is guessed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished functionality for hangman. Updates lives and displays message if word is guessed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

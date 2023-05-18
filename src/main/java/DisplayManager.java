@@ -1,5 +1,4 @@
 public class DisplayManager {
-
     private String generatedWord;
     private StringBuilder underscoredWord;
     private String guessedLetter;
@@ -43,7 +42,7 @@ public class DisplayManager {
     }
 
     public void displayStatus() {
-        System.out.println("Underscores: " + underscoredWord);
+        System.out.println("Remaining Letters: " + underscoredWord);
     }
 
     public boolean isGuessCorrect() {
