@@ -1,4 +1,4 @@
-import java.lang.reflect.Array;
+import java.util.Random;
 
 public class WordList{
 
@@ -31,8 +31,10 @@ public class WordList{
             "while"
     };
 
-    
+
     public String randomWord() {
-        return wordsArr[(int)(Math.random() * wordsArr.length)];
+        Random random = new Random();
+        int randomIndex = random.nextInt(wordsArr.length);
+        return wordsArr[randomIndex];
     }
 }
