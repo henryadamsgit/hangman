@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4cb373f-6a23-4300-8020-90a6658da9aa" name="Changes" comment="Tidied up files and structure. Deleted unnecessary file.">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="b4cb373f-6a23-4300-8020-90a6658da9aa" name="Changes" comment="Improve encapsulation by adding a Game constructor. Added improved endgame message to include display the generated word.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInteraction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684451198293</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Improve encapsulation by adding a Game constructor. Added improved endgame message to include display the generated word.">
+      <created>1684506022310</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684506022310</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -143,7 +147,8 @@
     <MESSAGE value="Game now runs on loop that ends when word is guessed." />
     <MESSAGE value="Finished functionality for hangman. Updates lives and displays message if word is guessed." />
     <MESSAGE value="Tidied up files and structure. Deleted unnecessary file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tidied up files and structure. Deleted unnecessary file." />
+    <MESSAGE value="Improve encapsulation by adding a Game constructor. Added improved endgame message to include display the generated word." />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve encapsulation by adding a Game constructor. Added improved endgame message to include display the generated word." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
