@@ -1,4 +1,4 @@
-public class DisplayManager {
+public class UserInteraction {
     private String generatedWord;
     private StringBuilder underscoredWord;
     private String guessedLetter;

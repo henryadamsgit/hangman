@@ -4,56 +4,51 @@ public class Game {
     private String word;
     private int lives;
 
-    public String getWord() {
-        return word;
+    public Game() {
+        this.lives = 5;
+        WordList wordList = new WordList();
+        this.word = wordList.randomWord();
     }
 
-    public void setWord(String word) {
-        this.word = word;
+    public String getWord() {
+        return word;
     }
 
     public int getLives() {
         return lives;
     }
 
-    public void setLives(int lives) {
-        this.lives = lives;
-    }
-
     public static void main(String[] args) {
         Game game = new Game();
-        WordList wordList = new WordList();
-
-        // Initialize the game variables
-        game.setWord(wordList.randomWord());
-        game.setLives(5);
-
-        DisplayManager displayManager = new DisplayManager();
-        displayManager.setGeneratedWord(game.getWord());
-        displayManager.initializeUnderscores();
+        UserInteraction interactions = new UserInteraction();
+        interactions.setGeneratedWord(game.getWord());
+        interactions.initializeUnderscores();
 
         // Game loop
-        while (game.endGame(displayManager.getGeneratedWord(), displayManager.getUnderscores(), game.getLives())) {
+        while (game.endGame(interactions.getGeneratedWord(), interactions.getUnderscores(), game.getLives())) {
             System.out.println("Enter a letter (a-z) to guess...");
             Scanner userInput = new Scanner(System.in);
             String guessedLetter = userInput.nextLine().toLowerCase();
 
-            displayManager.setGuessedLetter(guessedLetter);
-            displayManager.updateGame();
+            interactions.setGuessedLetter(guessedLetter);
+            interactions.updateGame();
 
-            displayManager.displayStatus();
+            interactions.displayStatus();
 
-            if (!displayManager.isGuessCorrect()) {
-                game.setLives(game.getLives() - 1);
+            if (interactions.isGuessCorrect()) {
+                System.out.println("Correct!");
+            } else {
+                game.lives--;
                 System.out.println("Incorrect! You have " + game.getLives() + " lives remaining!");
             }
         }
 
         // Game over
-        if (displayManager.getGeneratedWord().equals(displayManager.getUnderscores())) {
-            System.out.println("Congratulations, you guessed the word " + displayManager.getGeneratedWord() + " correctly!");
+        if (interactions.getGeneratedWord().equals(interactions.getUnderscores())) {
+            System.out.println("Congratulations, you guessed the word: " + interactions.getGeneratedWord() + ", correctly!");
         } else {
             System.out.println("Game Over!");
+            System.out.println("The word was: " + interactions.getGeneratedWord());
         }
     }
 
@@ -61,4 +56,3 @@ public class Game {
         return lives > 0 && !generatedWord.equals(underscores);
     }
 }
-
